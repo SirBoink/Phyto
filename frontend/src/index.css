@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+/* ── Custom Theme — Forest Green + Neon Sage ──────────── */
+@theme {
+  --color-forest: #051a10;
+  --color-forest-light: #0a2a1a;
+  --color-forest-mid: #0f3d26;
+  --color-sage: #4ade80;
+  --color-sage-dim: #22c55e;
+  --color-sage-glow: #4ade8066;
+  --color-teal: #2dd4bf;
+  --color-cream: #f5f0e8;
+  --color-cream-muted: #b8b0a2;
+  --color-cream-dim: #87806f;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.10);
+  --color-glass-hover: rgba(255, 255, 255, 0.08);
+  --color-healthy: #4ade80;
+  --color-warning: #fbbf24;
+  --color-critical: #f87171;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* ── Base ──────────────────────────────────────────────── */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-forest);
+  color: var(--color-cream);
+  min-height: 100vh;
+}
+
+/* ── Invisible scrollbar — reveals only on right-edge hover ─ */
+/* Hide scrollbar by default */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 999px;
+  transition: background 0.3s ease;
+}
+
+/* Show on body hover near right edge — use a wrapper approach */
+.scroll-reveal::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.scroll-reveal::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+html:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+/* ── Organic noise background ─────────────────────────── */
+.bg-organic {
+  background-color: var(--color-forest);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(74, 222, 128, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(45, 212, 191, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(74, 222, 128, 0.03) 0%, transparent 50%);
+}
+
+/* Subtle grain/noise overlay */
+.bg-organic::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* ── Glass card ───────────────────────────────────────── */
+.glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--color-glass-border);
+}
+
+/* ── Gradient border trick ────────────────────────────── */
+.gradient-border {
+  position: relative;
+  background: transparent;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(135deg, var(--color-sage-dim), var(--color-teal), var(--color-sage-dim));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-border:hover::before,
+.gradient-border.drag-active::before {
+  opacity: 1;
+}
+
+/* ── Upload glow on drag hover ────────────────────────── */
+.upload-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.upload-glow.drag-active {
+  box-shadow: 0 0 40px rgba(74, 222, 128, 0.15), 0 0 80px rgba(74, 222, 128, 0.08);
+}
+
+/* ── Shiny gradient button ────────────────────────────── */
+.btn-shiny {
+  background: linear-gradient(135deg, #22c55e 0%, #14b8a6 50%, #22c55e 100%);
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.2);
+}
+
+.btn-shiny:hover {
+  background-position: 100% 100%;
+  box-shadow: 0 0 30px rgba(74, 222, 128, 0.35);
+}
+
+.btn-shiny:active {
+  transform: scale(0.97);
+}
+
+/* ── Animated severity bar fill ────────────────────────── */
+@keyframes fill-bar {
+  from {
+    width: 0%;
+  }
+}
+
+.severity-bar-fill {
+  animation: fill-bar 1s ease-out forwards;
+}
+
+/* ── Loading skeleton shimmer ──────────────────────────── */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-forest-light) 25%, var(--color-forest-mid) 50%, var(--color-forest-light) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 0.5rem;
+}
+
+/* ── Chat bubble shapes ──────────────────────────────── */
+.chat-bubble-user {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.chat-bubble-ai {
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* ── Typing indicator dots ───────────────────────────── */
+@keyframes chat-bounce {
+
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+.chat-dot {
+  animation: chat-bounce 1.2s infinite;
+}

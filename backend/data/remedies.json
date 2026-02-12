@@ -1,0 +1,17 @@
+{
+  "Tomato___Late_blight": {
+    "disease": "Tomato Late Blight",
+    "description": "Caused by the oomycete Phytophthora infestans. Leads to dark, water-soaked lesions on leaves and fruit.",
+    "commercial": {
+      "product": "Ridomil Gold (Mancozeb + Metalaxyl)",
+      "dosage": "2.5 g per litre of water",
+      "frequency": "Spray every 7-10 days during wet conditions",
+      "notes": "Apply preventively before symptoms appear for best results. Rotate with copper-based fungicides to avoid resistance."
+    },
+    "jugaad": {
+      "recipe": "Baking soda spray — dissolve 1 tablespoon baking soda + 1 teaspoon vegetable oil + a few drops of dish soap in 1 litre of water.",
+      "frequency": "Spray every 5-7 days",
+      "notes": "Traditional home remedy. Raises leaf surface pH, inhibiting fungal spore germination. Remove severely infected leaves first."
+    }
+  }
+}
