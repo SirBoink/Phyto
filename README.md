@@ -1,127 +1,137 @@
-# 🌿 PlantGuard — AI Plant Disease Diagnosis
+# Phyto — Plant Disease Diagnosis System
 
-A full-stack plant-disease diagnosis system that uses computer vision and deep learning to identify diseases from leaf images and suggest remedies.
+Phyto is a full-stack web application that identifies plant diseases from leaf images using deep learning. It provides disease classification, severity analysis, remedy suggestions, and AI-powered advisory through a conversational interface.
 
-> **Version 0.5.0** — 50% Milestone Demo
+## Features
 
----
+- **Disease Classification** — Upload a leaf image and get a diagnosis powered by a ResNet-9 model trained on the PlantVillage dataset (38 disease classes).
+- **Severity Analysis** — OpenCV-based image processing estimates the percentage of leaf area affected.
+- **Remedy Lookup** — Returns commercial and traditional treatment options for the detected disease.
+- **AI Advisory** — Gemini-powered bilingual (English/Hindi) advisory with specific product recommendations, dosages, and organic alternatives.
+- **Follow-up Chat** — Ask up to 2 follow-up questions per diagnosis for clarification or additional guidance.
 
 ## Tech Stack
 
-| Layer     | Technology                     |
-| --------- | ------------------------------ |
-| Backend   | Python 3.13 · FastAPI · PyTorch · OpenCV |
-| Frontend  | Vite · React 19 · Tailwind CSS 4         |
-| Database  | Supabase (PostgreSQL) — skeleton          |
-
----
+| Layer    | Technology                              |
+| -------- | --------------------------------------- |
+| Backend  | Python, FastAPI, PyTorch, OpenCV        |
+| Frontend | React 19, Vite, Tailwind CSS 4         |
+| LLM      | Google Gemini (via `google-genai` SDK)  |
+| Database | Supabase (PostgreSQL)                   |
 
 ## Project Structure
 
 ```
-plant-guard/
+Phyto/
 ├── backend/
 │   ├── app/
 │   │   ├── core/
-│   │   │   └── config.py          # Centralized config + Supabase client
+│   │   │   └── config.py              # Environment config, Supabase client
 │   │   ├── routers/
-│   │   │   ├── diagnosis.py       # POST /api/predict
-│   │   │   ├── remedies.py        # GET  /api/remedies/{class}
-│   │   │   └── auth.py            # Placeholder auth stubs
+│   │   │   ├── diagnosis.py           # POST /api/predict
+│   │   │   ├── remedies.py            # GET  /api/remedies/{class}
+│   │   │   ├── chat.py                # POST /api/chat/advisory, /api/chat/followup
+│   │   │   └── auth.py                # Auth endpoints
 │   │   └── services/
-│   │       ├── ml_service.py      # PyTorch model manager
-│   │       ├── vision_service.py  # OpenCV severity analysis
-│   │       └── remedy_service.py  # JSON remedy lookup
+│   │       ├── ml_service.py          # PyTorch model loading and inference
+│   │       ├── vision_service.py      # OpenCV severity estimation
+│   │       ├── remedy_service.py      # JSON remedy lookup
+│   │       └── llm_service.py         # Gemini advisory and follow-up
 │   ├── data/
-│   │   └── remedies.json
-│   ├── models/                    # Place .pth files here
+│   │   └── remedies.json              # Remedy database
+│   ├── models/                        # Trained .pth model files
 │   ├── requirements.txt
 │   └── .env.example
 ├── frontend/
 │   ├── src/
-│   │   ├── components/            # UploadCard, ModelSelector, ResultsPanel, ErrorBoundary
-│   │   ├── hooks/                 # usePrediction custom hook
-│   │   ├── services/              # api.js fetch wrapper
+│   │   ├── components/
+│   │   │   ├── UploadCard.jsx         # Drag-and-drop image upload
+│   │   │   ├── ModelSelector.jsx      # Model selection dropdown
+│   │   │   ├── ResultsPanel.jsx       # Diagnosis results display
+│   │   │   ├── AiAdvisory.jsx         # LLM advisory and follow-up chat
+│   │   │   └── ErrorBoundary.jsx      # Error handling wrapper
+│   │   ├── hooks/
+│   │   │   └── usePrediction.js       # Prediction state management
+│   │   ├── services/
+│   │   │   └── api.js                 # API client
 │   │   ├── App.jsx
 │   │   └── index.css
-│   ├── index.html
 │   ├── vite.config.js
 │   └── package.json
-├── README.md
-└── PROJECT_DETAILS.md
+└── README.md
 ```
-
----
 
 ## Setup
 
 ### Prerequisites
 
-- **Python 3.13+**
-- **Node.js 18+** & npm
-
----
+- Python 3.11+
+- Node.js 18+ and npm
 
 ### Backend
 
 ```bash
-cd plant-guard/backend
+cd backend
 
-# Create and activate virtual environment
+# Create and activate a virtual environment
 python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # macOS / Linux
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure environment
-copy .env.example .env       # then edit .env with your Supabase keys
-
-# (Optional) Place your trained model file at:
-#   models/plant_disease_model.pth
-# The server runs in demo mode without it.
-
-# Start dev server
-python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+# Configure environment variables
+copy .env.example .env         # then fill in your keys
 ```
 
-API docs will be available at **http://127.0.0.1:8000/docs**
+The `.env` file requires the following:
 
----
+```
+SUPABASE_URL=<your-supabase-project-url>
+SUPABASE_KEY=<your-supabase-anon-key>
+MODEL_PATH=models/plant_disease_model.pth
+GEMINI_API_KEY=<your-gemini-api-key>
+```
+
+Place your trained model file at `models/plant_disease_model.pth`. Start the server:
+
+```bash
+python -m uvicorn app.main:app --reload --port 8000
+```
+
+API documentation is available at `http://127.0.0.1:8000/docs`.
 
 ### Frontend
 
 ```bash
-cd plant-guard/frontend
+cd frontend
 
-# Install dependencies
 npm install
-
-# Start dev server (proxies /api → backend)
 npm run dev
 ```
 
-Open **http://localhost:5173** in your browser.
-
----
-
-## Usage
-
-1. Open the frontend in your browser.
-2. Drag & drop (or browse) a leaf image (JPG/PNG, max 5 MB).
-3. Select a model from the dropdown (General is the only active model for now).
-4. Click **Diagnose**.
-5. View the results: disease name, confidence, severity bar, and remedy details.
-
----
+The frontend runs at `http://localhost:5173` and proxies API requests to the backend.
 
 ## API Endpoints
 
-| Method | Endpoint                     | Description                      |
-| ------ | ---------------------------- | -------------------------------- |
-| POST   | `/api/predict`               | Upload image → diagnosis + remedy |
-| GET    | `/api/remedies/{class}`      | Lookup remedy by disease class   |
-| POST   | `/api/auth/login`            | Stub — coming soon               |
-| POST   | `/api/auth/register`         | Stub — coming soon               |
-| GET    | `/`                          | Health check                     |
+| Method | Endpoint               | Description                                    |
+| ------ | ---------------------- | ---------------------------------------------- |
+| POST   | `/api/predict`         | Upload a leaf image for diagnosis              |
+| GET    | `/api/remedies/{class}`| Look up remedy by disease class                |
+| POST   | `/api/chat/advisory`   | Generate bilingual AI advisory from diagnosis  |
+| POST   | `/api/chat/followup`   | Send a follow-up question with chat history    |
+| GET    | `/`                    | Health check                                   |
+
+## Usage
+
+1. Open the application in a browser.
+2. Upload a leaf image (JPG or PNG, max 5 MB) using drag-and-drop or the file browser.
+3. Select a model and click Diagnose.
+4. View the results: disease name, confidence score, severity percentage, and recommended remedies.
+5. Read the AI advisory for detailed treatment guidance in English or Hindi.
+6. Ask follow-up questions about the diagnosis if needed.
+
+## License
+
+This project was built as part of the EPICS (Engineering Projects in Community Service) program.
