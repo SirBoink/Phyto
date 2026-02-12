@@ -1,10 +1,4 @@
-# Environments
 venv/
 .env
-
-# Python internals
-**/__pycache__/
+__pycache__/
 *.pyc
-
-# OS files
-.DS_Store
