@@ -1,4 +1,103 @@
-venv/
-.env
+# =========================
+# OS / SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# PYTHON BACKEND
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# =========================
+# ML / MODEL FILES (CRITICAL)
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.gguf
+
+# Model directories
+models/
+backend/models/
+checkpoints/
+
+# Large data files
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.npz
+
+# =========================
+# NODE / REACT FRONTEND
+# =========================
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Vite cache
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# ENV / SECRETS
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# TEST / TEMP FILES
+# =========================
+*.tmp
+*.temp
+temp/
+tmp/
+
+# =========================
+# JUPYTER
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# MISC
+# =========================
+coverage/
+.cache/

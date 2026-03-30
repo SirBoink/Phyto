@@ -9,4 +9,3 @@ python-dotenv
 google-genai
 httpx
 shapely
-

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { fetchAdvisory, sendFollowUp } from "../services/api";
+import { speak } from "../utils/tts";
 
 const MAX_FOLLOWUPS = 2;
 
@@ -7,8 +8,9 @@ const MAX_FOLLOWUPS = 2;
  * AI Advisory panel — auto-fetches LLM advisory on mount,
  * displays bilingual output with language toggle,
  * and supports up to 2 follow-up questions.
+ * Also renders Jugaad (traditional) remedies dynamically.
  */
-export default function AiAdvisory({ disease, confidence, severity }) {
+export default function AiAdvisory({ disease, confidence, severity, jugaadRemedies }) {
     const [advisory, setAdvisory] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -113,6 +115,29 @@ export default function AiAdvisory({ disease, confidence, severity }) {
     const data = advisory[lang];
     if (!data) return null;
 
+    /**
+     * Constructs a summary sentence for the commercial treatment.
+     * Format: "[dosage] of [product] at [frequency]"
+     */
+    const constructTreatmentSentence = (remedy) => {
+        if (!remedy) return "";
+        const { product, dosage, frequency } = remedy;
+        if (lang === "hindi") {
+            return `${product} का ${dosage}, ${frequency} पर प्रयोग करें।`;
+        }
+        return `${dosage} of ${product} at ${frequency}.`;
+    };
+
+    const handleSpeakTreatment = () => {
+        const sentence = constructTreatmentSentence(data.commercial_remedy);
+        if (sentence) speak(sentence, lang === "hindi" ? "hi-IN" : "en-US");
+    };
+
+    const handleSpeakChat = (content) => {
+        const text = typeof content === 'string' ? content : (content[lang] || content.english || JSON.stringify(content));
+        speak(text, lang === "hindi" ? "hi-IN" : "en-US");
+    };
+
     return (
         <div className="space-y-6">
 
@@ -146,10 +171,21 @@ export default function AiAdvisory({ disease, confidence, severity }) {
             <div className="border border-glass-border rounded-2xl overflow-hidden bg-glass">
                 {/* Commercial Tab */}
                 <div className="border-b border-glass-border">
-                    <div className="px-5 py-3 bg-sage/5">
+                    <div className="px-5 py-3 bg-sage/5 flex items-center justify-between">
                         <p className="text-sage text-sm font-medium">
                             {lang === "english" ? "Commercial Treatment" : "व्यावसायिक उपचार"}
                         </p>
+                        {data.commercial_remedy && (
+                            <button
+                                onClick={handleSpeakTreatment}
+                                className="p-1.5 rounded-lg hover:bg-sage/10 text-sage transition-colors"
+                                title="Listen to treatment summary"
+                            >
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                </svg>
+                            </button>
+                        )}
                     </div>
                     {data.commercial_remedy && (
                         <div className="p-5 space-y-3">
@@ -182,14 +218,60 @@ export default function AiAdvisory({ disease, confidence, severity }) {
                     )}
                 </div>
 
-                {/* Traditional Tab */}
+                {/* Traditional Tab (Jugaad Remedies) */}
                 <div>
                     <div className="px-5 py-3 bg-teal/5">
                         <p className="text-teal text-sm font-medium">
-                            {lang === "english" ? "Traditional Remedy" : "पारंपरिक उपचार"}
+                            {lang === "english" ? "Local / Traditional Remedies" : "स्थानीय / पारंपरिक उपचार"}
                         </p>
                     </div>
-                    {data.traditional_remedy && (
+                    
+                    {jugaadRemedies && jugaadRemedies.length > 0 ? (
+                        <div className="divide-y divide-glass-border">
+                            {jugaadRemedies.map((remedy, idx) => {
+                                // Extract correct fields based on language
+                                const name = lang === "hindi" ? (remedy.name_hi || remedy.name) : remedy.name;
+                                const ingredients = lang === "hindi" ? (remedy.ingredients_hi || remedy.ingredients) : remedy.ingredients;
+                                const application = lang === "hindi" ? (remedy.application_hi || remedy.application) : remedy.application;
+                                const mechanism = lang === "hindi" ? (remedy.mechanism_hi || remedy.mechanism) : remedy.mechanism;
+                                const source = lang === "hindi" ? (remedy.source_hi || remedy.source) : remedy.source;
+
+                                return (
+                                    <div key={idx} className="p-5 space-y-3">
+                                        <h4 className="text-teal font-medium text-base mb-2">{name}</h4>
+                                        
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                            <div>
+                                                <p className="text-cream-dim text-xs uppercase tracking-wider mb-1">
+                                                    {lang === "english" ? "Ingredients" : "सामग्री"}
+                                                </p>
+                                                <p className="text-cream text-base leading-relaxed">{ingredients}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-cream-dim text-xs uppercase tracking-wider mb-1">
+                                                    {lang === "english" ? "Application" : "प्रयोग"}
+                                                </p>
+                                                <p className="text-cream text-base leading-relaxed">{application}</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div className="pt-2">
+                                            <p className="text-cream-dim text-xs uppercase tracking-wider mb-1">
+                                                {lang === "english" ? "Mechanism" : "कार्यप्रणाली"}
+                                            </p>
+                                            <p className="text-cream text-sm leading-relaxed">{mechanism}</p>
+                                        </div>
+                                        
+                                        {source && (
+                                            <p className="text-cream-dim/60 text-xs italic mt-2">
+                                                Source: {source}
+                                            </p>
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    ) : data.traditional_remedy ? (
                         <div className="p-5 space-y-3">
                             <div>
                                 <p className="text-cream-dim text-xs uppercase tracking-wider mb-1">
@@ -208,6 +290,10 @@ export default function AiAdvisory({ disease, confidence, severity }) {
                                     {data.traditional_remedy.notes}
                                 </p>
                             )}
+                        </div>
+                    ) : (
+                        <div className="p-5">
+                            <p className="text-cream-dim text-sm">No traditional remedies found.</p>
                         </div>
                     )}
                 </div>
@@ -229,7 +315,7 @@ export default function AiAdvisory({ disease, confidence, severity }) {
                     <div className="px-5 py-4 space-y-3 max-h-64 overflow-y-auto">
                         {followUps.map((msg, i) => (
                             <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
-                                <div className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${msg.role === "user"
+                                <div className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed relative group ${msg.role === "user"
                                         ? "bg-sage/15 text-cream chat-bubble-user"
                                         : msg.role === "error"
                                             ? "bg-critical/10 text-critical"
@@ -239,6 +325,21 @@ export default function AiAdvisory({ disease, confidence, severity }) {
                                         ? (msg.content[lang] || msg.content.english || JSON.stringify(msg.content))
                                         : msg.content
                                     }
+
+                                    {/* TTS button for AI messages */}
+                                    {msg.role === "model" && (
+                                        <button
+                                            onClick={() => handleSpeakChat(msg.content)}
+                                            className="absolute -right-10 top-1/2 -translate-y-1/2 p-1.5 rounded-lg 
+                                                       bg-sage/10 text-sage opacity-0 group-hover:opacity-100 transition-all
+                                                       hover:bg-sage/20"
+                                            title="Listen to response"
+                                        >
+                                            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                            </svg>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         ))}

@@ -1,4 +1,4 @@
-import os
+import os 
 import sys
 from pathlib import Path
 from dotenv import load_dotenv
@@ -12,7 +12,7 @@ print(f"Python executable: {sys.executable}")
 print(f"Current working directory: {os.getcwd()}")
 print(f"GEMINI_API_KEY loaded: {'YES' if api_key else 'NO'}")
 
-if not api_key:
+if not api_key: 
     print("❌ ERROR: GEMINI_API_KEY not found in environment variables.")
     print("Please ensure you have a .env file in this directory with GEMINI_API_KEY=AI... defined.")
     sys.exit(1)

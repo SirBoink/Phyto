@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import UploadCard from "./components/UploadCard";
 import ModelSelector from "./components/ModelSelector";
@@ -9,8 +9,26 @@ export default function App() {
     const [file, setFile] = useState(null);
     const [preview, setPreview] = useState(null);
     const [modelKey, setModelKey] = useState("general");
+    const [userLocation, setUserLocation] = useState(null);
+    const [hasGeolocation, setHasGeolocation] = useState(false);
 
     const { result, loading, progress, error, predict, reset } = usePrediction();
+
+    // Fetch user geolocation for ISRO environmental context
+    useEffect(() => {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                (pos) => {
+                    setUserLocation({ lat: pos.coords.latitude, lon: pos.coords.longitude });
+                    setHasGeolocation(true);
+                },
+                (err) => {
+                    console.warn("Geolocation permission denied or failed. Generating estimates with default region.");
+                    setHasGeolocation(false);
+                }
+            );
+        }
+    }, []);
 
     // Determines whether we show the results view or upload view
     const showResults = result || loading || error;
@@ -23,7 +41,7 @@ export default function App() {
 
     const handlePredict = () => {
         if (!file) return;
-        predict(file, modelKey);
+        predict(file, modelKey, userLocation?.lat, userLocation?.lon);
     };
 
     const handleScanAnother = () => {
@@ -72,6 +90,7 @@ export default function App() {
                                         error={error}
                                         onRetry={handlePredict}
                                         preview={preview}
+                                        hasGeolocation={hasGeolocation}
                                     />
                                     {!loading && (
                                         <div className="mt-8 flex justify-center">
@@ -97,18 +116,17 @@ export default function App() {
                                     />
 
                                     {/* Control Bar */}
-                                    <div className="mt-6 flex flex-col sm:flex-row gap-4 items-stretch">
-                                        <div className="flex-1">
-                                            <ModelSelector value={modelKey} onChange={setModelKey} disabled={loading} />
-                                        </div>
+                                    <div className="mt-8 flex flex-col gap-6">
+                                        <ModelSelector value={modelKey} onChange={setModelKey} disabled={loading} />
+                                        
                                         <button
                                             onClick={handlePredict}
                                             disabled={!file || loading}
-                                            className="btn-shiny px-8 py-3.5 text-forest font-semibold rounded-2xl
+                                            className="btn-shiny w-full py-4 text-forest font-semibold rounded-2xl
                                                        disabled:opacity-30 disabled:cursor-not-allowed disabled:shadow-none
-                                                       whitespace-nowrap text-base tracking-wide"
+                                                       text-lg tracking-wide shadow-lg transition-all duration-300"
                                         >
-                                            {loading ? "Analyzing…" : "Diagnose"}
+                                            {loading ? "Analyzing…" : "Analyze Specimen"}
                                         </button>
                                     </div>
                                 </>

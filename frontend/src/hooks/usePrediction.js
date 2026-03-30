@@ -11,14 +11,14 @@ export function usePrediction() {
     const [progress, setProgress] = useState(0);
     const [error, setError] = useState(null);
 
-    const predict = useCallback(async (file, modelKey) => {
+    const predict = useCallback(async (file, modelKey, lat = null, lon = null) => {
         setLoading(true);
         setError(null);
         setResult(null);
         setProgress(0);
 
         try {
-            const data = await predictDisease(file, modelKey, setProgress);
+            const data = await predictDisease(file, modelKey, lat, lon, setProgress);
             setResult(data);
         } catch (err) {
             setError(err.message || "Something went wrong.");

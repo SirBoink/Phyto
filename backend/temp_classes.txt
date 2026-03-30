@@ -1,0 +1,9 @@
+
+=== models\chili\vgg.ipynb ===
+Classes: ['cercospora', 'healthy', 'mites_and_trips', 'nutritional', 'powdery mildew']
+
+=== models\wheat\densenet-121.ipynb ===
+Classes: ['Aphid', 'Black Rust', 'Blast', 'Brown Rust', 'Common Root Rot', 'Fusarium Head Blight', 'Healthy', 'Leaf Blight', 'Mildew', 'Mite', 'Septoria', 'Smut', 'Stem fly', 'Tan spot', 'Yellow Rust']
+
+=== models\wheat\eff_b0.ipynb ===
+Classes: ['Aphid', 'Black Rust', 'Blast', 'Brown Rust', 'Common Root Rot', 'Fusarium Head Blight', 'Healthy', 'Leaf Blight', 'Mildew', 'Mite', 'Septoria', 'Smut', 'Stem fly', 'Tan spot', 'Yellow Rust']

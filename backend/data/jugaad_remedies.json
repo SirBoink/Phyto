@@ -1,0 +1,910 @@
+{
+  "Apple___Apple_scab": {
+    "remedies": [
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters copper-vessel-stored water",
+        "mechanism": "Lactic acid bacteria create antifungal pH environment. Validated by ICAR as effective against Venturia inaequalis.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, Apple, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर तांबे के बर्तन में रखा हुआ पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया एंटीफंगल पीएच वातावरण बनाते हैं। ICAR द्वारा वेंचुरिया इनेक्वालिस के खिलाफ प्रभावी के रूप में मान्य।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, सेब, 2021"
+      },
+      {
+        "name": "Wood Ash Barrier (Raakh)",
+        "ingredients": "500g fine wood ash from chulha/traditional stove",
+        "mechanism": "High potassium content (K2O ~5%) creates alkaline surface hostile to fungal spores. Physical barrier against insect vectors.",
+        "application": "Dust lightly on leaves in early morning when dew is present for adhesion.",
+        "source": "NIPHM Traditional Practice Compendium",
+        "name_hi": "लकड़ी की राख अवरोध (राख)",
+        "ingredients_hi": "चूल्हे/पारंपरिक स्टोव से 500 ग्राम बारीक लकड़ी की राख",
+        "mechanism_hi": "पोटेशियम की उच्च मात्रा (K2O ~5%) एक क्षारीय सतह बनाती है जो कवक बीजाणुओं के लिए प्रतिकूल होती है। कीट वाहकों के खिलाफ भौतिक अवरोध।",
+        "application_hi": "चिपकने के लिए सुबह जल्दी जब ओस हो, तो पत्तियों पर हल्का छिड़काव (धूल की तरह) करें।",
+        "source_hi": "NIPHM पारंपरिक पद्धति संग्रह"
+      }
+    ]
+  },
+  "Apple___Black_rot": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation and insect molting cycles. Validated biopesticide under PPQ&S India.",
+        "application": "Filter and spray 3% solution weekly. Most effective at early infection stage.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कवक बीजाणुजनन और कीट निर्मोचन चक्र को बाधित करता है। PPQ&S भारत के तहत मान्य जैव कीटनाशक।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें। संक्रमण के शुरुआती चरण में सबसे प्रभावी।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters copper-vessel-stored water",
+        "mechanism": "Lactic acid bacteria create antifungal pH environment. Effective against rot-causing fungi.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, Apple, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर तांबे के बर्तन में रखा हुआ पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया एंटीफंगल पीएच वातावरण बनाते हैं। सड़न पैदा करने वाले कवक के खिलाफ प्रभावी।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, सेब, 2021"
+      }
+    ]
+  },
+  "Apple___Cedar_apple_rust": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation. Effective against rust-causing Gymnosporangium juniperi-virginianae.",
+        "application": "Filter and spray 3% solution weekly during spring flush.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कवक बीजाणुजनन को बाधित करता है। जंग पैदा करने वाले जिम्नोस्पोरंगियम जुनिपेरी-वर्जिनियाने के खिलाफ प्रभावी।",
+        "application_hi": "वसंत ऋतु के दौरान साप्ताहिक रूप से 3% घोल को छानकर छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH above 8.0, inhibiting rust spore germination. Soap acts as surfactant.",
+        "application": "Spray every 7–10 days during active rust season.",
+        "source": "Cornell University Extension / ICAR adaptation",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को 8.0 से ऊपर बढ़ाता है, जिससे रस्ट (जंग) बीजाणु अंकुरण रुक जाता है। साबुन सर्फैक्टेंट के रूप में कार्य करता है।",
+        "application_hi": "सक्रिय रस्ट (जंग) सीजन के दौरान हर 7-10 दिनों में छिड़काव करें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / ICAR अनुकूलन"
+      }
+    ]
+  },
+  "Apple___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a preventative against fungal and insect attacks on healthy plants.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन स्वस्थ पौधों पर कवक और कीटों के हमलों के खिलाफ निवारक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Blueberry___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "remedies": [
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH above 8.0, directly inhibiting powdery mildew (Podosphaera clandestina) germination.",
+        "application": "Spray every 7–10 days. Remove heavily infected leaves first.",
+        "source": "Cornell University Extension / ICAR adaptation for Indian conditions",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को 8.0 से ऊपर बढ़ाता है, जो सीधे पाउडर फफूंदी (पोडोस्फेरा क्लांडेस्टिना) के अंकुरण को रोकता है।",
+        "application_hi": "हर 7-10 दिनों में छिड़काव करें। पहले भारी संक्रमित पत्तियों को हटा दें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / भारतीय परिस्थितियों के लिए ICAR अनुकूलन"
+      },
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria create antifungal pH environment hostile to powdery mildew.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया एंटीफंगल पीएच वातावरण बनाते हैं जो पाउडर फफूंदी के लिए प्रतिकूल होता है।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      }
+    ]
+  },
+  "Cherry_(including_sour)___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation of Cercospora zeae-maydis. Validated biopesticide.",
+        "application": "Filter and spray 3% solution weekly at early symptom appearance.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन सर्कोस्पोरा ज़ी-मेयडिस के कवक बीजाणुजनन को बाधित करता है। मान्य जैव कीटनाशक।",
+        "application_hi": "शुरुआती लक्षण दिखने पर छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Wood Ash Barrier (Raakh)",
+        "ingredients": "500g fine wood ash from chulha/traditional stove",
+        "mechanism": "High potassium content creates alkaline surface hostile to fungal spores.",
+        "application": "Dust lightly on leaves in early morning when dew is present.",
+        "source": "NIPHM Traditional Practice Compendium",
+        "name_hi": "लकड़ी की राख अवरोध (राख)",
+        "ingredients_hi": "चूल्हे/पारंपरिक स्टोव से 500 ग्राम बारीक लकड़ी की राख",
+        "mechanism_hi": "पोटेशियम की उच्च मात्रा एक क्षारीय सतह बनाती है जो कवक बीजाणुओं के लिए प्रतिकूल होती है।",
+        "application_hi": "सुबह जल्दी जब ओस हो, तो पत्तियों पर हल्का छिड़काव (धूल की तरह) करें।",
+        "source_hi": "NIPHM पारंपरिक पद्धति संग्रह"
+      }
+    ]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "remedies": [
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH, inhibiting Puccinia sorghi rust spore germination.",
+        "application": "Spray every 7–10 days during active rust season.",
+        "source": "Cornell University Extension / ICAR adaptation",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को बढ़ाता है, जिससे पुकिनिया सोरघी रस्ट बीजाणु के अंकुरण को रोका जा सकता है।",
+        "application_hi": "सक्रिय रस्ट (जंग) सीजन के दौरान हर 7-10 दिनों में छिड़काव करें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / ICAR अनुकूलन"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation and insect molting cycles.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कवक बीजाणुजनन और कीट निर्मोचन चक्र को बाधित करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation of Exserohilum turcicum.",
+        "application": "Filter and spray 3% solution weekly at early symptom appearance.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक्सरोहिलम टर्सिकम के कवक बीजाणुजनन को बाधित करता है।",
+        "application_hi": "शुरुआती लक्षण दिखने पर छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Allicin (garlic) has proven antifungal activity. Capsaicin acts as insect repellent.",
+        "application": "Spray every 7 days. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "एलिसिन (लहसुन) में प्रमाणित एंटीफंगल गतिविधि है। कैप्सैकिन कीट विकर्षक के रूप में कार्य करता है।",
+        "application_hi": "हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      }
+    ]
+  },
+  "Corn_(maize)___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Grape___Black_rot": {
+    "remedies": [
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH above 8.0, inhibiting Guignardia bidwellii germination. Soap acts as surfactant and spreader-sticker.",
+        "application": "Spray every 7–10 days and after heavy rainfall.",
+        "source": "Cornell University Extension / ICAR adaptation for Indian conditions",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को 8.0 से ऊपर बढ़ाता है, जिससे गुइग्नार्डिया बिडवेली अंकुरण रुक जाता है। साबुन सर्फैक्टेंट और चिपकाने वाले पदार्थ के रूप में कार्य करता है।",
+        "application_hi": "हर 7-10 दिनों में और भारी बारिश के बाद छिड़काव करें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / भारतीय परिस्थितियों के लिए ICAR अनुकूलन"
+      }
+    ]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation. Helps manage wood-decay fungi complex.",
+        "application": "Filter and spray 3% solution weekly on foliage.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कवक बीजाणुजनन को बाधित करता है। लकड़ी-क्षय कवक परिसर के प्रबंधन में मदद करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से पत्तियों पर 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria create antifungal pH environment on leaf surface.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया पत्ती की सतह पर एंटीफंगल पीएच वातावरण बनाते हैं।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      }
+    ]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "remedies": [
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Allicin (garlic) has proven antifungal activity against Isariopsis leaf spot. Capsaicin repels insect vectors.",
+        "application": "Spray every 7 days. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "एलिसिन (लहसुन) में इसारियोप्सिस लीफ स्पॉट के खिलाफ प्रमाणित एंटीफंगल गतिविधि है। कैप्सैकिन कीट वाहकों को दूर भगाता है।",
+        "application_hi": "हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कवक बीजाणुजनन को बाधित करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Grape___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide for healthy vines.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन स्वस्थ लताओं के लिए एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "remedies": [
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Capsaicin acts as strong repellent against Asian citrus psyllid (Diaphorina citri), the HLB vector insect.",
+        "application": "Spray every 7 days on new flush growth. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "कैप्सैकिन एशियाई साइट्रस साइलिड (डायफोरिना सिट्री), HLB वाहक कीट के खिलाफ एक मजबूत विकर्षक के रूप में कार्य करता है।",
+        "application_hi": "नई वृद्धि (फुटाव) पर हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts insect molting cycles of the psyllid vector.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन साइलिड वाहक के कीट निर्मोचन (मोल्टिंग) चक्र को बाधित करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Peach___Bacterial_spot": {
+    "remedies": [
+      {
+        "name": "Turmeric Paste Spray (Haldi Paste)",
+        "ingredients": "200g turmeric powder + 10L water, well mixed",
+        "mechanism": "Curcumin has proven antibacterial activity against Xanthomonas arboricola. Validated by ICAR for surface bacterial infections.",
+        "application": "Spray on affected leaves and fruit. Repeat every 7 days.",
+        "source": "ICAR Antibacterial Activity of Curcumin, 2020",
+        "name_hi": "हल्दी का पेस्ट स्प्रे (हल्दी का लेप)",
+        "ingredients_hi": "200 ग्राम हल्दी पाउडर + 10 लीटर पानी, अच्छी तरह मिला हुआ",
+        "mechanism_hi": "करक्यूमिन में ज़ैंथोमोनस आर्बोरिकोला के खिलाफ प्रमाणित जीवाणुरोधी गतिविधि है। सतह के जीवाणु संक्रमण के लिए ICAR द्वारा मान्य।",
+        "application_hi": "प्रभावित पत्तियों और फलों पर छिड़काव करें। हर 7 दिनों में दोहराएं।",
+        "source_hi": "करक्यूमिन की ICAR जीवाणुरोधी गतिविधि, 2020"
+      },
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria create hostile environment for bacterial pathogens on leaf surface.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया पत्ती की सतह पर जीवाणु रोगजनकों के लिए प्रतिकूल वातावरण बनाते हैं।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      }
+    ]
+  },
+  "Peach___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "remedies": [
+      {
+        "name": "Turmeric Paste Spray (Haldi Paste)",
+        "ingredients": "200g turmeric powder + 10L water, well mixed",
+        "mechanism": "Curcumin has proven antibacterial activity against Xanthomonas campestris. Validated by ICAR.",
+        "application": "Spray on affected leaves. Repeat every 7 days.",
+        "source": "ICAR Antibacterial Activity of Curcumin, 2020",
+        "name_hi": "हल्दी का पेस्ट स्प्रे (हल्दी का लेप)",
+        "ingredients_hi": "200 ग्राम हल्दी पाउडर + 10 लीटर पानी, अच्छी तरह मिला हुआ",
+        "mechanism_hi": "करक्यूमिन में ज़ैंथोमोनस कैंपेस्ट्रिस के खिलाफ प्रमाणित जीवाणुरोधी गतिविधि है। ICAR द्वारा मान्य।",
+        "application_hi": "प्रभावित पत्तियों पर छिड़काव करें। हर 7 दिनों में दोहराएं।",
+        "source_hi": "करक्यूमिन की ICAR जीवाणुरोधी गतिविधि, 2020"
+      },
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Allicin has antibacterial and antifungal activity. Capsaicin repels insect vectors.",
+        "application": "Spray every 7 days. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "एलिसिन में जीवाणुरोधी और कवकनाशी गतिविधि होती है। कैप्सैकिन कीट वाहकों को दूर भगाता है।",
+        "application_hi": "हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      }
+    ]
+  },
+  "Pepper,_bell___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Potato___Early_blight": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts sporulation of Alternaria solani. Validated biopesticide under PPQ&S India.",
+        "application": "Filter and spray 3% solution weekly. Most effective at early infection stage.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन अल्टरनेरिया सोलानी के बीजाणुजनन को बाधित करता है। PPQ&S भारत के तहत मान्य जैव कीटनाशक।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें। संक्रमण के शुरुआती चरण में सबसे प्रभावी।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Allicin (garlic) has proven antifungal activity against Alternaria. Capsaicin acts as insect repellent.",
+        "application": "Spray every 7 days. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "एलिसिन (लहसुन) में अल्टरनेरिया के खिलाफ प्रमाणित एंटीफंगल गतिविधि है। कैप्सैकिन कीट विकर्षक के रूप में कार्य करता है।",
+        "application_hi": "हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      }
+    ]
+  },
+  "Potato___Late_blight": {
+    "remedies": [
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH above 8.0, inhibiting Phytophthora infestans germination.",
+        "application": "Spray every 7–10 days and after heavy rainfall. Remove severely infected leaves first.",
+        "source": "Cornell University Extension / ICAR adaptation for Indian conditions",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को 8.0 से ऊपर बढ़ाता है, जिससे फाइटोफ्थोरा इन्फेस्टन्स के अंकुरण को रोका जा सकता है।",
+        "application_hi": "हर 7-10 दिनों में और भारी बारिश के बाद छिड़काव करें। पहले गंभीर रूप से संक्रमित पत्तियों को हटा दें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / भारतीय परिस्थितियों के लिए ICAR अनुकूलन"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts oomycete sporulation cycles.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन ओमीसाइते बीजाणुजनन चक्र को बाधित करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Potato___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Raspberry___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Soybean___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Squash___Powdery_mildew": {
+    "remedies": [
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH above 8.0, directly inhibiting powdery mildew (Erysiphe cichoracearum) germination.",
+        "application": "Spray every 7–10 days. Most effective as preventative or at early infection.",
+        "source": "Cornell University Extension / ICAR adaptation for Indian conditions",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को 8.0 से ऊपर बढ़ाता है, जो सीधे पाउडर फफूंदी (एरीसिपे सिकोरासेरम) के अंकुरण को रोकता है।",
+        "application_hi": "हर 7-10 दिनों में छिड़काव करें। निवारक के रूप में या शुरुआती संक्रमण में सबसे प्रभावी।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / भारतीय परिस्थितियों के लिए ICAR अनुकूलन"
+      },
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria create antifungal pH environment hostile to powdery mildew.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया एंटीफंगल पीएच वातावरण बनाते हैं जो पाउडर फफूंदी के लिए प्रतिकूल होता है।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      }
+    ]
+  },
+  "Strawberry___Leaf_scorch": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts sporulation of Diplocarpon earlianum causing leaf scorch.",
+        "application": "Filter and spray 3% solution weekly at early symptom appearance.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन डिप्लोकार्पोन अर्लियनम के बीजाणुजनन को बाधित करता है, जो 'लीफ स्कॉर्च' का कारण बनता है।",
+        "application_hi": "शुरुआती लक्षण दिखने पर छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Wood Ash Barrier (Raakh)",
+        "ingredients": "500g fine wood ash from chulha/traditional stove",
+        "mechanism": "High potassium content creates alkaline surface hostile to fungal spores.",
+        "application": "Dust lightly on leaves in early morning when dew is present.",
+        "source": "NIPHM Traditional Practice Compendium",
+        "name_hi": "लकड़ी की राख अवरोध (राख)",
+        "ingredients_hi": "चूल्हे/पारंपरिक स्टोव से 500 ग्राम बारीक लकड़ी की राख",
+        "mechanism_hi": "पोटेशियम की उच्च मात्रा एक क्षारीय सतह बनाती है जो कवक बीजाणुओं के लिए प्रतिकूल होती है।",
+        "application_hi": "सुबह जल्दी जब ओस हो, तो पत्तियों पर हल्का छिड़काव (धूल की तरह) करें।",
+        "source_hi": "NIPHM पारंपरिक पद्धति संग्रह"
+      }
+    ]
+  },
+  "Strawberry___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "remedies": [
+      {
+        "name": "Turmeric Paste Spray (Haldi Paste)",
+        "ingredients": "200g turmeric powder + 10L water, well mixed",
+        "mechanism": "Curcumin has proven antibacterial activity against Xanthomonas vesicatoria. Validated by ICAR.",
+        "application": "Spray on affected leaves. Repeat every 7 days.",
+        "source": "ICAR Antibacterial Activity of Curcumin, 2020",
+        "name_hi": "हल्दी का पेस्ट स्प्रे (हल्दी का लेप)",
+        "ingredients_hi": "200 ग्राम हल्दी पाउडर + 10 लीटर पानी, अच्छी तरह मिला हुआ",
+        "mechanism_hi": "करक्यूमिन में ज़ैंथोमोनस वेसिकेटोरिया के खिलाफ प्रमाणित जीवाणुरोधी गतिविधि है। ICAR द्वारा मान्य।",
+        "application_hi": "प्रभावित पत्तियों पर छिड़काव करें। हर 7 दिनों में दोहराएं।",
+        "source_hi": "करक्यूमिन की ICAR जीवाणुरोधी गतिविधि, 2020"
+      },
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria create hostile environment for bacterial pathogens.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया जीवाणु रोगजनकों के लिए प्रतिकूल वातावरण बनाते हैं।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      }
+    ]
+  },
+  "Tomato___Early_blight": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts fungal sporulation and insect molting cycles. Validated biopesticide under PPQ&S India.",
+        "application": "Filter and spray 3% solution weekly. Most effective at early infection stage.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कवक बीजाणुजनन और कीट निर्मोचन चक्र को बाधित करता है। PPQ&S भारत के तहत मान्य जैव कीटनाशक।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें। संक्रमण के शुरुआती चरण में सबसे प्रभावी।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Allicin (garlic) has proven antifungal activity. Capsaicin (chili) acts as insect repellent and disrupts fungal membrane.",
+        "application": "Spray every 7 days. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "एलिसिन (लहसुन) में प्रमाणित एंटीफंगल गतिविधि है। कैप्सैकिन (मिर्च) कीट विकर्षक के रूप में कार्य करता है और कवक झिल्ली को नष्ट करता है।",
+        "application_hi": "हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      }
+    ]
+  },
+  "Tomato___Late_blight": {
+    "remedies": [
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH above 8.0, inhibiting Phytophthora infestans germination.",
+        "application": "Spray every 7–10 days and after heavy rainfall. Remove severely infected leaves first.",
+        "source": "Cornell University Extension / ICAR adaptation for Indian conditions",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को 8.0 से ऊपर बढ़ाता है, जिससे फाइटोफ्थोरा इन्फेस्टन्स के अंकुरण को रोका जा सकता है।",
+        "application_hi": "हर 7-10 दिनों में और भारी बारिश के बाद छिड़काव करें। पहले गंभीर रूप से संक्रमित पत्तियों को हटा दें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / भारतीय परिस्थितियों के लिए ICAR अनुकूलन"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts oomycete sporulation cycles.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन ओमीसाइते बीजाणुजनन चक्र को बाधित करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "remedies": [
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria create antifungal pH environment, effective against Passalora fulva (leaf mold).",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days. Ensure ventilation.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया एंटीफंगल पीएच वातावरण बनाते हैं, जो पासलोरा फुल्वा (लीफ मोल्ड) के खिलाफ प्रभावी है।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं। वेंटिलेशन (हवा) सुनिश्चित करें।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      },
+      {
+        "name": "Baking Soda + Soap Spray (Meetha Soda)",
+        "ingredients": "1 tbsp baking soda + 1 tsp vegetable oil + 1 tsp liquid soap + 4L water",
+        "mechanism": "Raises leaf surface pH, inhibiting mold spore germination.",
+        "application": "Spray every 7–10 days on upper and lower leaf surfaces.",
+        "source": "Cornell University Extension / ICAR adaptation",
+        "name_hi": "बेकिंग सोडा + साबुन स्प्रे (मीठा सोडा)",
+        "ingredients_hi": "1 बड़ा चम्मच बेकिंग सोडा + 1 छोटा चम्मच वनस्पति तेल + 1 छोटा चम्मच तरल साबुन + 4 लीटर पानी",
+        "mechanism_hi": "पत्ती की सतह के पीएच को बढ़ाता है, जिससे मोल्ड बीजाणु अंकुरण रुक जाता है।",
+        "application_hi": "हर 7-10 दिनों में पत्ती की ऊपरी और निचली सतहों पर छिड़काव करें।",
+        "source_hi": "कॉर्नेल यूनिवर्सिटी एक्सटेंशन / ICAR अनुकूलन"
+      }
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts sporulation of Septoria lycopersici. Validated biopesticide.",
+        "application": "Filter and spray 3% solution weekly. Remove lower infected leaves first.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन सेप्टोरिया लाइकोपर्सिकी के बीजाणुजनन को बाधित करता है। मान्य जैव कीटनाशक।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें। पहले नीचे की संक्रमित पत्तियों को हटा दें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Allicin has proven antifungal activity against Septoria species.",
+        "application": "Spray every 7 days. Avoid spraying in direct afternoon sun.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "एलिसिन में सेप्टोरिया प्रजातियों के खिलाफ प्रमाणित एंटीफंगल गतिविधि है।",
+        "application_hi": "हर 7 दिनों में छिड़काव करें। दोपहर की सीधी धूप में छिड़काव से बचें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      }
+    ]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "remedies": [
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Capsaicin is a strong repellent and contact toxicant against spider mites (Tetranychus urticae). Allicin adds antifungal protection.",
+        "application": "Spray on undersides of leaves every 5 days during active infestation.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "कैप्सैकिन मकड़ी के कण (स्पाइडर माइट्स - टेट्रानिकस अर्टिकाई) के खिलाफ एक मजबूत विकर्षक और संपर्क विषैला पदार्थ है। एलिसिन एंटीफंगल सुरक्षा जोड़ता है।",
+        "application_hi": "सक्रिय संक्रमण के दौरान हर 5 दिनों में पत्तियों के निचले हिस्से पर छिड़काव करें।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts mite molting and feeding cycles. Validated biopesticide.",
+        "application": "Filter and spray 3% solution on leaf undersides weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन माइट के निर्मोचन (मोल्टिंग) और खिलाने के चक्र को बाधित करता है। मान्य जैव कीटनाशक।",
+        "application_hi": "साप्ताहिक रूप से पत्तियों के निचले हिस्से पर 3% घोल को छानकर छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts sporulation of Corynespora cassiicola causing target spot.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन कोर्नेसपोरा कैसिक्कोला के बीजाणुजनन को बाधित करता है, जो 'टारगेट स्पॉट' का कारण बनता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      },
+      {
+        "name": "Wood Ash Barrier (Raakh)",
+        "ingredients": "500g fine wood ash from chulha/traditional stove",
+        "mechanism": "High potassium content creates alkaline surface hostile to fungal spores.",
+        "application": "Dust lightly on leaves in early morning when dew is present.",
+        "source": "NIPHM Traditional Practice Compendium",
+        "name_hi": "लकड़ी की राख अवरोध (राख)",
+        "ingredients_hi": "चूल्हे/पारंपरिक स्टोव से 500 ग्राम बारीक लकड़ी की राख",
+        "mechanism_hi": "पोटेशियम की उच्च मात्रा एक क्षारीय सतह बनाती है जो कवक बीजाणुओं के लिए प्रतिकूल होती है।",
+        "application_hi": "सुबह जल्दी जब ओस हो, तो पत्तियों पर हल्का छिड़काव (धूल की तरह) करें।",
+        "source_hi": "NIPHM पारंपरिक पद्धति संग्रह"
+      }
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "remedies": [
+      {
+        "name": "Garlic-Chili Spray (Lahsun-Mirchi Kadha)",
+        "ingredients": "100g garlic paste + 50g green chili paste + 10L water, strained",
+        "mechanism": "Capsaicin is a strong repellent against whitefly (Bemisia tabaci), the primary TYLCV vector. Prevents secondary infection.",
+        "application": "Spray every 5–7 days, focusing on leaf undersides where whiteflies congregate.",
+        "source": "NIPHM Advisory Note NA-2019-07",
+        "name_hi": "लहसुन-मिर्च स्प्रे (लहसुन-मिर्च का काढ़ा)",
+        "ingredients_hi": "100 ग्राम लहसुन का पेस्ट + 50 ग्राम हरी मिर्च का पेस्ट + 10 लीटर पानी, छाना हुआ",
+        "mechanism_hi": "कैप्सैकिन सफेद मक्खी (बेमिसिया तबाकी), प्राथमिक TYLCV वाहक के खिलाफ एक मजबूत विकर्षक है। माध्यमिक संक्रमण को रोकता है।",
+        "application_hi": "हर 5-7 दिनों में छिड़काव करें, पत्तियों के निचले हिस्से पर ध्यान केंद्रित करें जहां सफेद मक्खियां जमा होती हैं।",
+        "source_hi": "NIPHM परामर्श नोट NA-2019-07"
+      },
+      {
+        "name": "Neem Leaf Extract (Neem Kadha)",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin disrupts whitefly molting cycles and acts as feeding deterrent.",
+        "application": "Filter and spray 3% solution weekly.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा)",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन सफेद मक्खी के निर्मोचन (मोल्टिंग) चक्र को बाधित करता है और खिलाने से रोकने वाले के रूप में कार्य करता है।",
+        "application_hi": "छानकर साप्ताहिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "remedies": [
+      {
+        "name": "Sour Buttermilk Spray (Khatta Chaach)",
+        "ingredients": "4–6 liters of 15-day-old buttermilk + 10 liters water",
+        "mechanism": "Lactic acid bacteria may inhibit viral transmission on leaf surfaces. Also prevents secondary fungal infections on virus-weakened tissue.",
+        "application": "Spray on both leaf surfaces at dusk. Repeat every 10 days. Remove and burn infected plants.",
+        "source": "ICAR Package of Practices, 2021",
+        "name_hi": "खट्टी छाछ स्प्रे (खट्टी छाछ)",
+        "ingredients_hi": "4-6 लीटर 15 दिन पुरानी छाछ + 10 लीटर पानी",
+        "mechanism_hi": "लैक्टिक एसिड बैक्टीरिया पत्ती की सतहों पर वायरस के संचरण को रोक सकते हैं। वायरस से कमजोर ऊतकों पर माध्यमिक कवक संक्रमण को भी रोकता है।",
+        "application_hi": "शाम के समय पत्ती की दोनों सतहों पर छिड़काव करें। हर 10 दिनों में दोहराएं। संक्रमित पौधों को हटा दें और जला दें।",
+        "source_hi": "ICAR पैकेज ऑफ प्रैक्टिसेज, 2021"
+      },
+      {
+        "name": "Turmeric Paste Spray (Haldi Paste)",
+        "ingredients": "200g turmeric powder + 10L water, well mixed",
+        "mechanism": "Curcumin has antimicrobial properties that help prevent secondary infections on virus-weakened tissue.",
+        "application": "Spray weekly. Sanitize tools with turmeric solution between plants.",
+        "source": "ICAR Antimicrobial Studies, 2020",
+        "name_hi": "हल्दी का पेस्ट स्प्रे (हल्दी का लेप)",
+        "ingredients_hi": "200 ग्राम हल्दी पाउडर + 10 लीटर पानी, अच्छी तरह मिला हुआ",
+        "mechanism_hi": "करक्यूमिन में रोगाणुरोधी गुण होते हैं जो वायरस से कमजोर ऊतकों पर माध्यमिक संक्रमण को रोकने में मदद करते हैं।",
+        "application_hi": "साप्ताहिक छिड़काव करें। पौधों के बीच हल्दी के घोल से औजारों को कीटाणुरहित करें।",
+        "source_hi": "ICAR रोगाणुरोधी अध्ययन, 2020"
+      }
+    ]
+  },
+  "Tomato___healthy": {
+    "remedies": [
+      {
+        "name": "Neem Leaf Extract (Neem Kadha) — Preventative",
+        "ingredients": "2kg fresh neem leaves + 10L water, boiled and cooled",
+        "mechanism": "Azadirachtin acts as a broad-spectrum preventative biopesticide for healthy tomato plants.",
+        "application": "Spray 3% solution monthly as preventative measure.",
+        "source": "PPQ&S Biopesticides Portal, ICAR 2022",
+        "name_hi": "नीम की पत्ती का अर्क (नीम का काढ़ा) — निवारक",
+        "ingredients_hi": "2 किलो ताजी नीम की पत्तियां + 10 लीटर पानी, उबला हुआ और ठंडा किया गया",
+        "mechanism_hi": "अज़ादिरक्टिन स्वस्थ टमाटर के पौधों के लिए एक व्यापक स्पेक्ट्रम निवारक जैव कीटनाशक के रूप में कार्य करता है।",
+        "application_hi": "निवारक उपाय के रूप में मासिक रूप से 3% घोल का छिड़काव करें।",
+        "source_hi": "PPQ&S जैव कीटनाशक पोर्टल, ICAR 2022"
+      }
+    ]
+  }
+}

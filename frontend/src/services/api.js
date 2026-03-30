@@ -5,10 +5,18 @@
 
 const BASE = "/api";
 
-export async function predictDisease(file, modelKey = "general", onProgress) {
+export async function predictDisease(file, modelKey = "general", lat = null, lon = null, onProgress) {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("model_key", modelKey);
+
+    // Build URL with query parameters
+    const params = new URLSearchParams();
+    if (lat !== null && lon !== null) {
+        params.append("lat", lat);
+        params.append("lon", lon);
+    }
+    const queryString = params.toString() ? `?${params.toString()}` : "";
 
     // XMLHttpRequest gives us upload progress tracking
     return new Promise((resolve, reject) => {
@@ -31,7 +39,7 @@ export async function predictDisease(file, modelKey = "general", onProgress) {
         xhr.addEventListener("error", () => reject(new Error("Network error")));
         xhr.addEventListener("abort", () => reject(new Error("Request aborted")));
 
-        xhr.open("POST", `${BASE}/predict`);
+        xhr.open("POST", `${BASE}/predict${queryString}`);
         xhr.send(formData);
     });
 }

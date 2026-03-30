@@ -1,16 +1,13 @@
-import { useState } from "react";
 import AiAdvisory from "./AiAdvisory";
 import EnvironmentalPanel from "./EnvironmentalPanel";
 import ValueEstimationPanel from "./ValueEstimationPanel";
 
 /**
  * Full results view — replaces the upload area once prediction completes.
- * Shows disease name + image side-by-side, severity bar, and remedy card.
- * Uses pop-up modals for Environmental & Value Estimation panels.
+ * Shows disease name + image side-by-side, severity bar, environmental
+ * intelligence panel, and remedy card.
  */
 export default function ResultsPanel({ result, loading, error, onRetry, preview, hasGeolocation }) {
-    const [showEnvModal, setShowEnvModal] = useState(false);
-    const [showValModal, setShowValModal] = useState(false);
 
     // ── Loading skeleton ──────────────────────────────────
     if (loading) {
@@ -121,25 +118,18 @@ export default function ResultsPanel({ result, loading, error, onRetry, preview,
                 </div>
             </div>
 
-            {/* ── Actions Row: Advanced Features Buttons ── */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                {result.environmental_context && (
-                    <button 
-                        onClick={() => setShowEnvModal(true)}
-                        className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-white/5 hover:bg-white/10 border border-glass-border rounded-2xl transition-colors text-cream group"
-                    >
-                        <span className="font-medium group-hover:text-sage transition-colors">Environmental Context</span>
-                    </button>
-                )}
-                {result.market_data && (
-                    <button 
-                        onClick={() => setShowValModal(true)}
-                        className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-white/5 hover:bg-white/10 border border-glass-border rounded-2xl transition-colors text-cream group"
-                    >
-                        <span className="font-medium group-hover:text-sage transition-colors">Market Value Estimation</span>
-                    </button>
-                )}
-            </div>
+            {/* ── Environmental Intelligence Panel ──────── */}
+            {result.environmental_context && (
+                <EnvironmentalPanel
+                    envContext={result.environmental_context}
+                    hasGeolocation={hasGeolocation}
+                />
+            )}
+
+            {/* ── Crop Market Value Info (Agmarknet) ──────── */}
+            {result.market_data && (
+                <ValueEstimationPanel marketData={result.market_data} />
+            )}
 
             {/* ── AI Advisory (replaces static remedy card) ── */}
             {result.disease && (
@@ -150,24 +140,6 @@ export default function ResultsPanel({ result, loading, error, onRetry, preview,
                     jugaadRemedies={result.jugaad_remedies}
                 />
             )}
-
-            {/* ── Modals ── */}
-            {showEnvModal && (
-                <EnvironmentalPanel
-                    envContext={result.environmental_context}
-                    weather={result.weather}
-                    hasGeolocation={hasGeolocation}
-                    onClose={() => setShowEnvModal(false)}
-                />
-            )}
-            {showValModal && (
-                <ValueEstimationPanel 
-                    marketData={result.market_data} 
-                    marketLossData={result.market_loss_data}
-                    onClose={() => setShowValModal(false)} 
-                />
-            )}
         </div>
     );
 }
-
