@@ -1,60 +1,58 @@
-"""
-Service to provide real-time weather data for environmental risk context.
-Includes a high-fidelity simulation fallback for the Bhopal region.
-"""
-import random
-from datetime import datetime
+import requests
+import time
+import json
 
-# In a real app, this would come from an environment variable
-OPENWEATHER_API_KEY = None 
+class WeatherService:
+    def __init__(self):
+        self.api_keys = {
+            'provider1': 'YOUR_API_KEY_1',  # Replace with actual API keys
+            'provider2': 'YOUR_API_KEY_2',  # Replace with actual API keys
+            'provider3': 'YOUR_API_KEY_3'   # Replace with actual API keys
+        }
+        self.cache = {}
+        self.rate_limit = 60  # Example rate limit, adjust per provider
+        self.last_request_time = 0
 
-async def get_weather_data(lat: float, lon: float) -> dict:
-    """
-    Fetches weather data. If no API key or failure, returns a realistic 
-    simulation based on the current date and location (Bhopal region).
-    """
-    # For now, we simulate to ensure "premium" feel with 100% reliability
-    return _get_simulated_weather(lat, lon)
-
-def _get_simulated_weather(lat: float, lon: float) -> dict:
-    """
-    Generates realistic weather data for Bhopal/Sehore in late March.
-    Late March in Bhopal: Transition to summer, dry, warm.
-    """
-    now = datetime.now()
-    month = now.month
-    hour = now.hour
-    
-    # Base values for late March (Month 3)
-    # 35°C High, 21°C Low
-    if 6 <= hour < 18: # Daytime
-        temp = random.uniform(32.0, 36.5)
-        humidity = random.uniform(20.0, 35.0)
-    else: # Nighttime
-        temp = random.uniform(19.0, 24.0)
-        humidity = random.uniform(35.0, 50.0)
+    def get_weather(self, location):
+        # Check cache first
+        if location in self.cache:
+            return self.cache[location]
         
-    pressure = random.uniform(1008.0, 1012.0)
-    wind_speed = random.uniform(5.0, 15.0) # km/h
-    
-    # Determine conditions based on humidity
-    if humidity < 30:
-        condition = "Clear Sky"
-        icon = "☀️"
-    elif humidity < 50:
-        condition = "Mainly Clear"
-        icon = "🌤️"
-    else:
-        condition = "Partly Cloudy"
-        icon = "⛅"
+        # Check rate limiting
+        current_time = time.time()
+        if current_time - self.last_request_time < self.rate_limit:
+            time.sleep(self.rate_limit - (current_time - self.last_request_time))
 
-    return {
-        "temperature": round(temp, 1),
-        "humidity": round(humidity, 0),
-        "pressure": round(pressure, 1),
-        "wind_speed": round(wind_speed, 1),
-        "condition": condition,
-        "icon": icon,
-        "feels_like": round(temp + random.uniform(-1, 1), 1),
-        "timestamp": now.strftime("%Y-%m-%d %H:%M:%S")
-    }
+        try:
+            weather_data = self.fetch_weather_from_primary_provider(location)
+            self.cache[location] = weather_data  # Cache the result
+            self.last_request_time = time.time()
+            return weather_data
+        except Exception as e:
+            print(f"Error fetching from primary provider: {e}")
+            # Attempt to fallback to secondary provider
+            try:
+                weather_data = self.fetch_weather_from_secondary_provider(location)
+                self.cache[location] = weather_data
+                return weather_data
+            except Exception as e:
+                print(f"Error fetching from secondary provider: {e}")
+                return None
+
+    def fetch_weather_from_primary_provider(self, location):
+        response = requests.get(f'https://api.provider1.com/weather?location={location}&apikey={self.api_keys['provider1']}')
+        response.raise_for_status()  # Raise an error for bad responses
+        return response.json()
+
+    def fetch_weather_from_secondary_provider(self, location):
+        response = requests.get(f'https://api.provider2.com/weather?location={location}&apikey={self.api_keys['provider2']}')
+        response.raise_for_status()
+        return response.json()
+
+    def clear_cache(self):
+        self.cache.clear()  # Clear the cache if needed
+
+# Usage:
+# weather_service = WeatherService()
+# weather = weather_service.get_weather('New York')
+# print(weather)
